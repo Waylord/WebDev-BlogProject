@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#logo_blogando {
+    width: 70%;
+    height: auto;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}

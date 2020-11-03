@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Blogando</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/master.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg- mb-5">
+                <a class="navbar-brand" href="./"><img src="img/logo.png" id="logo_blogando"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="textoNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./">Home<span class="sr-only">(Página atual)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">
+                                Gestão
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="aprovacao_usuarios.html">Usuários</a>
+                                <a class="dropdown-item" href="aprovacao_postagens.html">Postagens</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="login.html"><button class="btn btn-outline-success">Logar</button></a>
+                </div>
+            </nav>
+
+            <!-- postagem -->
+
+            <!-- Aprovação de postagens -->
+            <div id="aprovaPostagens">
+                <div class="row mb-3" style="padding-top: 50px;">
+                    <div class="col-12 pt-1">
+                        <h3>Postagens pendentes de aprovação</h3>
+                    </div>
+                </div>
+                <hr>
+                <label for="titulo">Título</label>
+                <input type="text" class="form-control mb-2" placeholder="Título" aria-label="Usuário" aria-describedby="basic-addon1">
+                
+                <label for="texto">Texto</label>
+                <textarea class="form-control mb-3" aria-label="Com textarea"></textarea>
+
+                <div id="enviar">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="page-footer font-small unique-color-dark">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#"> Jair de Lima Ribeiro</a>
+                </div>
+            </footer>
+        </div>
+
+        <div style="display: none;">
+            <script src="../jquery/jquery-3.5.1.min.js"></script>
+            <script src="../popper.js/popper.min.js"></script>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>

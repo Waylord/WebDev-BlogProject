@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Blogando</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/master.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg- mb-5">
+                <a class="navbar-brand" href="./"><img src="img/logo.png" id="logo_blogando"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="textoNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="./">Home<span class="sr-only">(Página atual)</span></a>
+                        </li>
+                        <li class="nav-item dropdown"><li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">
+                                Área restrita
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="admin/aprovacao_usuarios.html">Administrador</a>
+                                <a class="dropdown-item" href="editor/private_editor.html">Editor</a>
+                                <a class="dropdown-item" href="comentarista/private_comentarista.html">Comentarista</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="login.html"><button class="btn btn-outline-success">Logar</button></a>
+                </div>
+            </nav>
+
+            <!-- banner -->
+            <div class="jumbotron p-3 p-md-5 text-white rounded bg-dark" id="banner">
+                <div class="col-md-6 px-0">
+                    <h1 class="display-4 font-italic">Se atualize sobre o mundo digital!</h1>
+                    <p class="lead my-3">Fique por dentro dos mais diversos conteúdos sobre tecnologia com nossos autores. Cadastre-se agora mesmo!</p>
+                    <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Saiba mais...</a></p>
+                </div>
+            </div>
+
+            <!-- seções com 3 postagens mais recentes -->
+            <div class="card">
+                <h2 class="card-title"><a href="post.html">Título principal</a></h2>
+                <h5 class="card-subtitle">Oct 1st, 2020</h5>
+                <h6 class="card-group"><a href="post.html">Programação</a></h6>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <a href="post.html">Continue lendo...</a>
+            </div>
+            <div class="card">
+                <h2 class="card-title"><a href="post.html">Título principal</a></h2>
+                <h5 class="card-subtitle">Oct 1st, 2020</h5>
+                <h6 class="card-group"><a href="post.html">Programação</a></h6>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <a href="post.html">Continue lendo...</a>
+            </div>
+            <div class="card">
+                <h2 class="card-title"><a href="post.html">Título principal</a></h2>
+                <h5 class="card-subtitle">Oct 1st, 2020</h5>
+                <h6 class="card-group"><a href="post.html">Programação</a></h6>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                <a href="post.html">Continue lendo...</a>
+            </div>
+
+            <!-- footer -->
+            <footer class="page-footer font-small unique-color-dark">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#"> Jair de Lima Ribeiro</a>
+                </div>
+            </footer>
+        </div>
+
+        <div style="display: none;">
+            <script src="../jquery/jquery-3.5.1.min.js"></script>
+            <script src="../popper.js/popper.min.js"></script>
+            <script src="../bootstrap/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>

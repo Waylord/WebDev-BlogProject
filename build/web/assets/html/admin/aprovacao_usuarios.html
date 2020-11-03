@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Blogando</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/master.css">
+    </head>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg- mb-5">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo.png" id="logo_blogando"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="textoNavbar">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Home<span class="sr-only">(Página atual)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="">
+                                Gestão
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="aprovacao_usuarios.html">Usuários</a>
+                                <a class="dropdown-item" href="aprovacao_postagens.html">Postagens</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="../login.html"><button class="btn btn-outline-success">Logar</button></a>
+                </div>
+            </nav>
+
+
+            <!-- corpo -->
+            <div id="aprovaUsuario">
+                <div class="row mb-3" style="padding-top: 50px;">
+                    <div class="col-12 pt-1">
+                        <h3>Usuários pendentes</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 pt-1">
+                        Nome do Usuário
+                    </div>
+                    <div class="col-3 pt-1">
+                        CPF (login)
+                    </div>
+                    <div class="col-3 pt-1">
+                        Perfil solicitado
+                    </div>
+                    <div class="col-3 pt-1">
+                        Ação a ser tomada
+                    </div>                    
+                </div>
+                <hr>
+                <div class="row" style="font-size: 12px; color: #686868;">
+                    <div class="col-3 pt-1">
+                        Usuário 1
+                    </div>
+                    <div class="col-3 pt-1">
+                        000.000.001-91
+                    </div>
+                    <div class="col-3 pt-1">
+                        Administrador
+                    </div>
+                    <div class="col-3 pt-1">
+                        <button class="btn btn-success btn-sm">Aprovar</button>
+                        <button class="btn btn-danger btn-sm">Recusar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aprovaUsuario">
+                <div class="row" style="padding-top: 50px;">
+                    <div class="col-12 pt-1">
+                        <h3>Usuários ativos</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 pt-1">
+                        Nome do Usuário
+                    </div>
+                    <div class="col-3 pt-1">
+                        Login do Usuário
+                    </div>
+                    <div class="col-3 pt-1">
+                        Perfil
+                    </div>
+                    <div class="col-3 pt-1">
+                        <center>Ação a ser tomada</center>
+                    </div>                    
+                </div>
+                <hr>
+                <div class="row mb-2" style="font-size: 12px; color: #686868;">
+                    <div class="col-3 pt-1">
+                        Administrador dos Santos
+                    </div>
+                    <div class="col-3 pt-1">
+                        000.000.002-72
+                    </div>
+                    <div class="col-3 pt-1">
+                        Administrador
+                    </div>
+                    <div class="col-3 pt-1">
+                        <select>
+                            <option selected>Trocar cargo</option>
+                            <option>Comentarista</option>
+                            <option>Editor</option>
+                            <option disabled>=========</option>
+                            <option>Administrador</option>
+                        </select>
+
+                        <button class="btn btn-danger btn-sm">Excluir</button>
+                    </div>
+                </div>
+                <div class="row mb-2" style="font-size: 12px; color: #686868;">
+                    <div class="col-3 pt-1">
+                        Editor 2
+                    </div>
+                    <div class="col-3 pt-1">
+                        000.000.003-53
+                    </div>
+                    <div class="col-3 pt-1">
+                        Editor
+                    </div>
+                    <div class="col-3 pt-1">
+                        <select>
+                            <option selected>Trocar cargo</option>
+                            <option>Comentarista</option>
+                            <option>Editor</option>
+                            <option disabled>=========</option>
+                            <option>Administrador</option>
+                        </select>
+
+                        <button class="btn btn-danger btn-sm">Excluir</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            <footer class="page-footer font-small unique-color-dark">
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="#"> Jair de Lima Ribeiro</a>
+                </div>
+            </footer>
+        </div>
+
+        <div style="display: none;">
+            <script src="../../jquery/jquery-3.5.1.min.js"></script>
+            <script src="../../popper.js/popper.min.js"></script>
+            <script src="../../bootstrap/js/bootstrap.min.js"></script>
+        </div>
+    </body>
+</html>
